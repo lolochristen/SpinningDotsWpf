@@ -1,1 +1,1 @@
-# SpnningDotsWpf
+# SpinningDotsWpf

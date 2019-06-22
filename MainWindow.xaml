@@ -1,0 +1,15 @@
+﻿<Window x:Class="SpinningDotsWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpinningDotsWpf"
+        mc:Ignorable="d"
+        Background="Black"
+        Title="Spinning Dots..." Height="1024" Width="1024">
+    <Grid>
+        <Slider x:Name="SizeSlider" VerticalAlignment="Top" Value="4" Minimum="0" Maximum="20" ValueChanged="SizeSlider_ValueChanged"  />
+        <Canvas x:Name="Board" Background="Black">
+        </Canvas>
+    </Grid>
+</Window>
