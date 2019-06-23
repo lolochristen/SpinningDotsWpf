@@ -5,11 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SpinningDotsWpf"
         mc:Ignorable="d"
-        Background="Black"
         Title="Spinning Dots..." Height="1024" Width="1024">
     <Grid>
-        <Slider x:Name="SizeSlider" VerticalAlignment="Top" Value="4" Minimum="0" Maximum="20" ValueChanged="SizeSlider_ValueChanged"  />
-        <Canvas x:Name="Board">
+        <Canvas x:Name="Board" Background="Black">
         </Canvas>
+        <Slider x:Name="SizeSlider" VerticalAlignment="Top" Value="4" Minimum="0" Maximum="20" ValueChanged="SizeSlider_ValueChanged"  />
     </Grid>
 </Window>

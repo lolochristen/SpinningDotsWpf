@@ -43,10 +43,10 @@ namespace SpinningDotsWpf
 
             for (int i = 0; i < numberDots; i++)
             {
-                lines[i] = new Line() { Stroke = new SolidColorBrush(Color.FromArgb((byte)((205f/numberDots*i)+50), 225, 94, 255)), StrokeThickness  = 2 };
+                lines[i] = new Line() { Stroke = new SolidColorBrush(Color.FromArgb((byte)((155f/numberDots*i)+50), 225, 94, 255)), StrokeThickness  = 2 };
                 Board.Children.Add(lines[i]);
 
-                dots[i] = new Ellipse() { Fill = new SolidColorBrush(Color.FromArgb((byte)((205f/numberDots*i)+50), 180, 150, 255)), Width=10, Height=10 };
+                dots[i] = new Ellipse() { Fill = new SolidColorBrush(Color.FromArgb((byte)((155f/numberDots*i)+100), (byte) (180f / numberDots * i), (byte) (i / numberDots * 150f), 255)), Width=15, Height=15 };
                 Board.Children.Add(dots[i]);
             }
 
@@ -100,7 +100,7 @@ namespace SpinningDotsWpf
             // renderTargetBitmap.Render(Board); 
             // PngBitmapEncoder pngImage = new PngBitmapEncoder();
             // pngImage.Frames.Add(BitmapFrame.Create(renderTargetBitmap));
-            // using (Stream fileStream = File.Create($"image_{loopCount:0000000}.png"))
+            // using (Stream fileStream = File.Create($".\\bin\\image_{loopCount:0000000}.png"))
             // {
             //     pngImage.Save(fileStream);
             // }
