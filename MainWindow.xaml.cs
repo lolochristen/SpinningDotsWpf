@@ -43,10 +43,10 @@ namespace SpinningDotsWpf
 
             for (int i = 0; i < numberDots; i++)
             {
-                lines[i] = new Line() { Stroke = new SolidColorBrush(Color.FromArgb((byte)(i*(155/numberDots)+100), 225, 94, 255)), StrokeThickness  = 2 };
+                lines[i] = new Line() { Stroke = new SolidColorBrush(Color.FromArgb((byte)((205f/numberDots*i)+50), 225, 94, 255)), StrokeThickness  = 2 };
                 Board.Children.Add(lines[i]);
 
-                dots[i] = new Ellipse() { Fill = new SolidColorBrush(Color.FromArgb((byte)(i*(155/numberDots)+100), 180, 150, 255)), Width=10, Height=10 };
+                dots[i] = new Ellipse() { Fill = new SolidColorBrush(Color.FromArgb((byte)((205f/numberDots*i)+50), 180, 150, 255)), Width=10, Height=10 };
                 Board.Children.Add(dots[i]);
             }
 
@@ -58,7 +58,7 @@ namespace SpinningDotsWpf
                     _timer.Start();
             };
 
-            Size = 1.5f;
+            Size = 1.8f;
             SizeSlider.Value = Size;
 
             _timer = new System.Windows.Threading.DispatcherTimer(DispatcherPriority.Normal);
